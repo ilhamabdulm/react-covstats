@@ -32,6 +32,7 @@ export default function MainPage() {
     if (all) {
       dispatch(getAllData());
     }
+    // eslint-disable-next-line
   }, [all]);
 
   return (
