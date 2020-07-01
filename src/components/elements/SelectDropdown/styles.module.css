@@ -1,0 +1,13 @@
+.select {
+  background-color: var(--white-color);
+  border: 0.125rem solid #e8e8e8;
+  box-shadow: none;
+  color: var(--black-color);
+  display: block;
+  font-size: 1.15rem;
+  line-height: 1.5rem;
+  outline: none;
+  padding: 0.5rem;
+  width: 100%;
+  box-shadow: 0 0.15rem 0.35rem #ddd;
+}

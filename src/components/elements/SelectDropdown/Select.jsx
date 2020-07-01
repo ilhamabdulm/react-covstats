@@ -7,7 +7,11 @@ export default function Select(props) {
   const { data, handleChange } = props;
 
   return (
-    <select name="select" onChange={(e) => handleChange(e.target.value)}>
+    <select
+      className={styles.select}
+      name="select"
+      onChange={(e) => handleChange(e.target.value)}
+    >
       {data.map((el) => (
         <option value={el.value}>{el.value}</option>
       ))}

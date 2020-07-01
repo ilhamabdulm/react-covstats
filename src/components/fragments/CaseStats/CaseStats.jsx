@@ -4,8 +4,8 @@ import { useSelector } from 'react-redux';
 import styles from './styles.module.css';
 import Card from '../../elements/Card/Card';
 
-export default function CaseStats({ isAll }) {
-  const { data, loading, provinceData } = useSelector((s) => s.case);
+export default function CaseStats() {
+  const { data, loading } = useSelector((s) => s.case);
 
   return (
     <section>

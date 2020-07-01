@@ -19,7 +19,6 @@ export default function MainPage() {
   const handleChange = (value) => {
     if (value === 'Semua Data' || value === 'Indonesia') {
       setProvince('Keseluruhan');
-      dispatch(getAllData());
       setAll(true);
     } else {
       setProvince(value);
@@ -30,13 +29,15 @@ export default function MainPage() {
   };
 
   useEffect(() => {
-    dispatch(getAllData());
-  }, []);
+    if (all) {
+      dispatch(getAllData());
+    }
+  }, [all]);
 
   return (
     <PageBase>
       <main className={styles.main}>
-        <CaseStats isAll={all} />
+        <CaseStats />
         <Action handleChange={handleChange} />
         <GraphSection active={province} isAll={all} />
       </main>
