@@ -1,0 +1,46 @@
+.daily {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  height: 32.5rem;
+  margin: 0 2rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top > * {
+  margin-bottom: 1rem;
+}
+
+.simple-card {
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0.85rem;
+  color: var(--black-color);
+  width: 100%;
+}
+
+.bottom > p {
+  background-color: var(--red-color);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+
+.text-card {
+  background-color: var(--yellow-color);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}

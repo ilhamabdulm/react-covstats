@@ -1,0 +1,25 @@
+.action {
+  margin: 2rem 0;
+  width: 15.5rem;
+}
+
+.action > select {
+  background-color: var(--white-color);
+  border: 0.125rem solid #e8e8e8;
+  box-shadow: none;
+  color: var(--black-color);
+  display: block;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  outline: none;
+  padding: 0.25rem;
+  width: 100%;
+}
+
+@media (max-width: 48em) {
+  .action {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+}

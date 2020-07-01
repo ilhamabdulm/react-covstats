@@ -1,0 +1,46 @@
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 15.5rem;
+  max-width: 17.25rem;
+  color: var(--white-color);
+  padding: 0.25rem 1rem;
+}
+
+.card.green {
+  background-color: var(--green-color);
+}
+
+.card.red {
+  background-color: var(--red-color);
+}
+
+.card.yellow {
+  background-color: var(--yellow-color);
+}
+
+.card.white {
+  background-color: var(--white-color);
+}
+
+.card-body > p {
+  font-size: 1rem;
+}
+
+.card-body > h4 {
+  font-size: 1.5rem;
+}
+
+.image {
+  width: 4.25rem;
+  height: 4.25rem;
+}
+
+@media (max-width: 48em) {
+  .card {
+    width: 100%;
+    max-width: 100%;
+    padding: 0.5rem 2rem;
+  }
+}
